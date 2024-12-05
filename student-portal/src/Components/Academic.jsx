@@ -48,7 +48,7 @@ const Academic = () => {
           <h2 className="text-xl font-bold text-gray-700 mb-4">View Results</h2>
           <p className="text-gray-600 mb-4">Check your academic results here.</p>
           <a
-            href="/check-result"
+            href="/academic-check-result"
             className="px-6 py-2 bg-green-500 text-white font-medium rounded-lg hover:bg-green-600 transition"
           >
             View Results
