@@ -9,7 +9,7 @@ import Footer from "./Footer";
 
 const Studenthome = () => {
   return (
-    <div className="h-screen w-screen bg-gray-50 p-5 pt-10">
+    <div className="min-h-screen w-screen bg-gray-50 p-5 pt-10">
       {/* Header */}
       <div className="flex justify-between items-center">
         <h1 className="flex items-center text-3xl font-bold gap-3">
@@ -56,7 +56,7 @@ const Studenthome = () => {
         </div>
 
         {/* Status Section */}
-        <div className="mt-5 lg:mt-10 mb-10 lg:mb-0 flex lg:flex-nowrap gap-5 lg:justify-between lg:p-5 px-1 py-4 w-full overflow-x-auto space-x-4">
+        <div className="mt-5 lg:mt-10 flex lg:flex-nowrap gap-5 lg:justify-between lg:p-5 px-1 py-4 w-full overflow-x-auto space-x-4">
           {/* Fee Status */}
           <a href="/fee-payment" className="h-48 min-w-[70%] lg:min-w-[30%] lg:h-auto mt-2 p-5 rounded-lg bg-white shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300 ease-in-out" >
             <div>

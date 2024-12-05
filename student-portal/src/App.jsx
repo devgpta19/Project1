@@ -14,7 +14,7 @@ import AttendancePage from './Components/Attendance';
 const App = () => {
   return (
     <>
-      <div className='h-screen w-screen bg-slate-700'>
+      <div className='min-h-screen w-screen overflow-hidden p-1 bg-slate-700'>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<LandingPage />} />
