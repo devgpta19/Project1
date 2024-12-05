@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 const LandingPage = () => (
   <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-500 text-white text-center p-10">
@@ -23,6 +24,7 @@ const LandingPage = () => (
         Admin Page
       </Link>
     </div>
+    <Footer />
   </div>
 );
 

@@ -5,6 +5,7 @@ import { HiAcademicCap } from "react-icons/hi2";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { IoMdLogOut } from "react-icons/io";
 import { GiReceiveMoney } from "react-icons/gi";
+import Footer from "./Footer";
 
 const Studenthome = () => {
   return (
@@ -35,7 +36,7 @@ const Studenthome = () => {
           </div>
 
           {/* Student Details */}
-          <div className="lg:w-[calc(100%-22rem)] lg:p-5 lg:ml-16 rounded-md bg-white shadow-md p-5">
+          <div className="lg:w-[calc(100%-22rem)] lg:p-5 mt-3 lg:mt-0 lg:ml-16 rounded-md bg-white shadow-md p-5">
             <h1 className="uppercase text-2xl mb-6 font-bold">Student Details</h1>
             <div className="flex flex-col gap-4">
               <div>
@@ -55,7 +56,7 @@ const Studenthome = () => {
         </div>
 
         {/* Status Section */}
-        <div className="lg:mt-10 flex lg:flex-nowrap gap-5 lg:justify-between lg:p-5 px-1 py-4 w-full overflow-x-auto space-x-4">
+        <div className="mt-5 lg:mt-10 mb-10 lg:mb-0 flex lg:flex-nowrap gap-5 lg:justify-between lg:p-5 px-1 py-4 w-full overflow-x-auto space-x-4">
           {/* Fee Status */}
           <a href="/fee-payment" className="h-48 min-w-[70%] lg:min-w-[30%] lg:h-auto mt-2 p-5 rounded-lg bg-white shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300 ease-in-out" >
             <div>
@@ -91,6 +92,7 @@ const Studenthome = () => {
           </a>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

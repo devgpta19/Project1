@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { IoIosCard } from "react-icons/io";
 import { IoChevronBackCircleOutline } from "react-icons/io5";
 import { IoMdLogOut } from "react-icons/io";
+import Footer from "./Footer";
 
 const FeePayment = ({ selectedCourses = ["mern_stack", "devops"] }) => {
   // Course fees definition
@@ -234,6 +235,7 @@ const FeePayment = ({ selectedCourses = ["mern_stack", "devops"] }) => {
           </div>
         </form>
       </div>
+      <Footer />
     </div>
   );
 };

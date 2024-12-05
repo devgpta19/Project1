@@ -4,6 +4,7 @@ import { IoMdListBox } from "react-icons/io";
 import { IoMdPeople } from "react-icons/io";
 import { IoChevronBackCircleOutline } from "react-icons/io5";
 import { IoMdLogOut } from "react-icons/io";
+import Footer from "./Footer";
 
 const Academic = () => {
   return (
@@ -68,6 +69,7 @@ const Academic = () => {
           </a>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

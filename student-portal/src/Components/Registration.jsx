@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { IoIosPersonAdd } from "react-icons/io";
 import { IoChevronBackCircleOutline } from "react-icons/io5";
 import { IoMdLogOut } from "react-icons/io";
+import Footer from "./Footer";
 
 const Registration = () => {
   const [selectedCourses, setSelectedCourses] = useState([]);
@@ -180,6 +181,7 @@ const Registration = () => {
           </div>
         </form>
       </div>
+      <Footer />
     </div>
   );
 };

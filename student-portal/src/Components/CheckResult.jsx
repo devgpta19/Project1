@@ -1,6 +1,7 @@
 import React from 'react';
 import { IoChevronBackCircleOutline } from "react-icons/io5";
 import { IoMdLogOut } from "react-icons/io";
+import Footer from './Footer';
 
 const CheckResult = () => {
   // Sample data for enrolled courses and marks
@@ -90,6 +91,7 @@ const CheckResult = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };
