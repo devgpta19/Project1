@@ -32,7 +32,6 @@ const StudentHomePage = () => {
                 {/* Student Info on Top-right */}
                 <div className="flex items-center space-x-4 text-gray-700">
                     <span className="font-semibold">UserID: Student123</span>
-                    <span className="px-4 py-2 bg-gray-800 text-white rounded-full">Student</span>
                     <a href="/" className="text-3xl">
                         <IoMdLogOut />
                     </a>
@@ -87,7 +86,6 @@ const StudentHomePage = () => {
                         <div className="flex justify-between items-center">
                             <div>
                                 <p className="text-xl font-semibold">Total Courses Enrolled</p>
-                                <p className="text-3xl font-bold">5</p>
                             </div>
                             <FaBook className="text-4xl" />
                         </div>
@@ -109,7 +107,7 @@ const StudentHomePage = () => {
                         <div className="flex justify-between items-center">
                             <div>
                                 <p className="text-xl font-semibold">Assignments</p>
-                                <p className="text-3xl font-bold">3</p>
+                                <p className="text-3xl font-bold">4</p>
                             </div>
                             <IoIosPeople className="text-4xl" />
                         </div>

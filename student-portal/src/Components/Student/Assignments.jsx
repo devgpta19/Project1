@@ -39,9 +39,6 @@ const AssignmentsPage = () => {
                 </div>
                 <div className="flex items-center space-x-4">
                     <span className="text-gray-700 font-medium">UserID: Student123</span>
-                    <span className="px-4 py-2 bg-gray-800 text-white rounded-full">
-                        Student
-                    </span>
                     <a href="/" className="text-3xl text-gray-600 hover:text-gray-800">
                         <IoMdLogOut />
                     </a>
