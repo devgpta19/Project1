@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { IoChevronBackCircleOutline } from "react-icons/io5";
 import { IoMdLogOut } from "react-icons/io";
-import Footer from "./Footer";
+import Footer from "../Footer";
 
 const AttendancePage = () => {
     // Mock data for the student

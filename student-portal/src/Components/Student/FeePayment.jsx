@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { IoIosCard } from "react-icons/io";
 import { IoChevronBackCircleOutline } from "react-icons/io5";
 import { IoMdLogOut } from "react-icons/io";
-import Footer from "./Footer";
+import Footer from "../Footer";
 
 const FeePayment = ({ selectedCourses = ["mern_stack", "devops"] }) => {
   // Course fees definition
@@ -104,6 +104,7 @@ const FeePayment = ({ selectedCourses = ["mern_stack", "devops"] }) => {
               Student Name
             </label>
             <input
+              required
               type="text"
               id="studentName"
               value={formData.studentName}
@@ -165,6 +166,7 @@ const FeePayment = ({ selectedCourses = ["mern_stack", "devops"] }) => {
               Payment Method
             </label>
             <select
+              required
               id="paymentMethod"
               value={formData.paymentMethod}
               onChange={handleInputChange}
@@ -226,12 +228,16 @@ const FeePayment = ({ selectedCourses = ["mern_stack", "devops"] }) => {
 
           {/* Pay Now Button */}
           <div className="flex justify-end">
-            <button
+            <a href="print-receipt" className="px-6 py-3 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-600 transition focus:outline-none focus:ring focus:ring-blue-300"
+            >
+              Pay <span className="text-lg font-bold">₹{finalAmount}</span> Now
+            </a>
+            {/* <button
               type="submit"
               className="px-6 py-3 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-600 transition focus:outline-none focus:ring focus:ring-blue-300"
             >
               Pay <span className="text-lg font-bold">₹{finalAmount}</span> Now
-            </button>
+            </button> */}
           </div>
         </form>
       </div>

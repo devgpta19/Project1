@@ -5,7 +5,7 @@ import { HiAcademicCap } from "react-icons/hi2";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { IoMdLogOut } from "react-icons/io";
 import { GiReceiveMoney } from "react-icons/gi";
-import Footer from "./Footer";
+import Footer from "../Footer";
 
 const Studenthome = () => {
   return (
@@ -61,11 +61,14 @@ const Studenthome = () => {
           <a href="/fee-payment" className="h-48 min-w-[70%] lg:min-w-[30%] lg:h-auto mt-2 p-5 rounded-lg bg-white shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300 ease-in-out" >
             <div>
               <h1 className="text-lg font-semibold mb-2"> <GiReceiveMoney className="text-green-400 text-3xl" /> <span> Fee Status </span></h1>
-              <div className="flex items-center gap-2">
-                <p className="bg-orange-100 text-orange-500 px-2 py-1 rounded-xl">Pending!</p>
-                <a className="text-blue-500 text-sm flex items-center gap-1" href="fee-payment">
-                  <FaExternalLinkAlt /> Pay Now
-                </a>
+              <div className="flex items-center justify-between">
+                <div className="flex items-center float-start gap-2">
+                  <p className="bg-orange-100 text-orange-500 px-2 py-1 rounded-xl">Pending!</p>
+                  <a className="text-blue-500 text-sm flex items-center gap-1" href="fee-payment">
+                    <FaExternalLinkAlt /> Pay Now
+                  </a>
+                </div>
+                <a href="/print-receipt"><button className="p-1 bg-zinc-200 text-black rounded-md float-end ">Print Receipt</button></a>
               </div>
             </div>
           </a>
@@ -76,7 +79,7 @@ const Studenthome = () => {
               <h1 className="text-lg font-semibold mb-2"><IoIosPersonAdd className="text-blue-400 text-3xl" />Registration Status</h1>
               <div className="flex items-center gap-2">
                 <p className="bg-green-100 text-green-500 px-2 py-1 rounded-xl">Done</p>
-                <a className="text-blue-500 text-sm flex items-center gap-1" href="registration">
+                <a className="text-blue-500 text-sm flex items-center gap-1" href="registration-done">
                   <FaExternalLinkAlt /> View
                 </a>
               </div>

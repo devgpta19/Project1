@@ -1,7 +1,7 @@
 import React from 'react';
 import { IoChevronBackCircleOutline } from "react-icons/io5";
 import { IoMdLogOut } from "react-icons/io";
-import Footer from './Footer';
+import Footer from '../Footer';
 
 const CheckResult = () => {
   // Sample data for enrolled courses and marks
@@ -26,7 +26,7 @@ const CheckResult = () => {
       <div className="w-full max-w-4xl mb-8">
         <h1 className="flex flex-row items-center text-3xl font-bold lg:justify-between text-gray-800">
           <span className="flex gap-3 items-center">
-            <a href="/academic" className="mr-8">
+            <a href="/student-home" className="mr-8">
               <IoChevronBackCircleOutline />
             </a>
             Result
